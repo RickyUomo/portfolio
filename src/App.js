@@ -9,11 +9,14 @@ function App() {
   return (
     <div>
       <nav>
-        <Navbar />
+        {/* <Navbar /> */}
       </nav>
 
       <main className="text-gray-300 bg-gray-900 body-font">
         <About />
+        <Projects />
+        <Skills />
+        <Contact />
       </main>
     </div>
 
