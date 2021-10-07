@@ -4,7 +4,7 @@ import { projects } from "../projects";
 
 export default function Projects() {
     return (
-        <section>
+        <section id="projects">
             <div className="container px-5 py-10 mx-auto text-center lg:px-40">
                 <div className="flex flex-col w-full mb-20">
                     <CodeIcon className="mx-auto inline-block w-10 mb-4" />
