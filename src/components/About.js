@@ -8,13 +8,12 @@ export default function About() {
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="sm:text-4xl text-3xl mb-4 font-medium text-white">
                         Hi, I'm Ricky Kuo.
-                        <br className="hidden lg:inline-block" />I love to build amazing
-                        apps.
+                        <br />
+                        I love to build apps and learn new technologies.
                     </h1>
                     <p className="mb-8 leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                        laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-                        Laborum, voluptas natus?
+                        I am currently completing the final year of my MSc Computer Science degree 
+                        at University of Nottingham, looking for Junior Developer position.
                     </p>
                     <div className="flex justify-center">
                         <a
