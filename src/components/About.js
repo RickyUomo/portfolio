@@ -12,15 +12,32 @@ export default function About() {
                         I love to build apps and learn new technologies.
                     </h1>
                     <p className="mb-8 leading-relaxed">
-                        I am currently completing the final year of my MSc Computer Science degree 
+                        I am currently completing the final year of my MSc Computer Science degree
                         at University of Nottingham, looking for Junior Developer position.
                     </p>
                     <div className="flex justify-center">
-                       
                         <a
                             href="#projects"
                             className="ml-4 inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 hover:text-white rounded text-lg">
                             See My Past Work
+                        </a>
+
+
+                    </div>
+                    <div className="mt-4">
+                        <a
+                            href="https://www.linkedin.com/in/ricky-kuo/"
+                            target="_blank"
+                            className="text-white px-6 hover:text-gray-300 text-3xl">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                        <a
+                            href="https://github.com/RickyUomo"
+                            target="_blank"
+                            className="text-white hover:text-gray-300 text-3xl"
+                        >
+
+                            <ion-icon className="" name="logo-github"></ion-icon>
                         </a>
                     </div>
                 </div>
