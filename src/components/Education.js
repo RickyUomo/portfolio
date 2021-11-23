@@ -15,7 +15,7 @@ export default function Educatoin() {
             <div className="text-white flex flex-col text-left">
                 <div className="mb-8 text-lg">
                     <h1 className="text-2xl mb-2 ">
-                        University of Nottingham, UK (Grade: minimum 2:1)
+                        University of Nottingham, UK (Grade: Merit)
                     </h1>
                     <h3 className="text-lg mb-4 text-gray-300">
                         MSc in Computer Science (Artificial Intelligent)
