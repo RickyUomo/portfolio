@@ -8,7 +8,7 @@ export default function Educatoin() {
                 <div className="flex flex-col w-full mb-10">
                     <AcademicCapIcon className="mx-auto inline-block w-10 mb-4" />
                     <h1 className="sm:text-4xl text-3xl font-medium text-center title-font text-white">
-                        Educatoin TEST MERGE CONFLICTS
+                        Educatoin
                     </h1>
                 </div>
             </div>

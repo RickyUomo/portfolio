@@ -15,6 +15,32 @@ export default function Work() {
             <div className="text-white text-left flex flex-col">
                 <div className="mb-8 text-lg">
                     <h1 className="text-2xl mb-2 text-center">
+                        Darktrace
+                    </h1>
+                    <h3 className="text-lg mb-4 text-gray-300 text-center">
+                        Software Engineer
+                    </h3>
+                    <div className="text-md text-left ">
+                        <li>
+                            Developed Web API and SQL query on NodeJS
+                        </li>
+                        <li>
+                            Developed reusable JS class components, implemented with JQuery and CSS
+                        </li>
+
+                        <li>
+                            Cooperated with technical operations executive to achieve web visual and
+                            backend business logic design goals
+                        </li>
+                        <li>
+                            Participated in Scrum meetings and code reviews
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div className="text-white text-left flex flex-col">
+                <div className="mb-8 text-lg">
+                    <h1 className="text-2xl mb-2 text-center">
                         Bright Ideas Design CO., LTD.
                     </h1>
                     <h3 className="text-lg mb-4 text-gray-300 text-center">

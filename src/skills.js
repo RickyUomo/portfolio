@@ -1,2 +1,2 @@
-export const skills = ['JavaScript', 'Python', 
-'MySQL','React', 'TailwindCss', 'Django', 'API']
+export const skills = ['JavaScript', 'Python',
+    'SQL', 'React', 'NodeJS', 'TailwindCss', 'Django', 'Git']

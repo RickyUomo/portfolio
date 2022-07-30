@@ -12,8 +12,7 @@ export default function About() {
                         I love to build apps and learn new technologies.
                     </h1>
                     <p className="mb-8 leading-relaxed">
-                        I am currently completing the final year of my MSc Computer Science degree
-                        at University of Nottingham, looking for Junior Developer position.
+                        I am currently working as a Software Engineer in Darktrace.
                     </p>
                     <div className="flex justify-center">
                         <a
