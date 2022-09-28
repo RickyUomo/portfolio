@@ -9,17 +9,17 @@ export const projects = [
             "React and Django REST framework application to predict infant's mortality",
         image: p1,
         link: "https://infant-front.herokuapp.com/",
-    },{
+    }, {
         title: 'Netflix Clone',
         description:
             "React, styled components and firebase to rebuild Netflix interface. However, still under construction",
         image: netflix,
-        link: "https://netflixc-clone.herokuapp.com/",
+        link: "https://clonenetflixproject.herokuapp.com/",
     },
     {
         title: 'Movie Search',
         description:
-        "Responsively movie searching application, implemented debounce to restrict the amount of API calls. <React, TMDB>",
+            "Responsively movie searching application, implemented debounce to restrict the amount of API calls. <React, TMDB>",
         image: movie,
         link: 'https://cord-movie-search.herokuapp.com/discover'
     }
