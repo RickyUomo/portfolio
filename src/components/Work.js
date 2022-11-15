@@ -32,7 +32,7 @@ export default function Work() {
 
     return (
         <section id="experience">
-            <div className="grid grid-cols-2 ml-28 mr-28">
+            <div className="bg-gray-900 body-font mb-10 m-auto max-w-xl p-6">
                 <div className="text-center">
                     <BriefcaseIcon className="mx-auto inline-block w-10 mb-4" /><h1 className="text-4xl">Work Experience</h1>
                 </div>
