@@ -1,65 +1,45 @@
-import React from 'react'
+import React from 'react';
 import { BriefcaseIcon } from "@heroicons/react/solid";
+import WorkCard from './WorkCard';
 
 export default function Work() {
+    const works = [
+        {
+            id: 1,
+            title: 'Software Developer',
+            company: 'Darktrace, UK',
+            time: `Feb - Present 2022`,
+            desc: [
+                `Maintained internal Customer Relationship Management application by developing routes API, 
+                middleware and SQL query in NodeJS, migrating Database in PHP Laravel framework, implementing UI in jQuery/React`,
+                `Implemented sales rep’s dashboard using vanilla JavaScript and jQuery to visualize data stored in MySQL, 
+                designed SQL query decreasing loading latency by over 10 times`,
+                `Cooperated with technical operations executive to achieve front-end visual designs 
+                and backend business logic according to requirements`
+            ]
+        },
+        {
+            id: 2,
+            title: 'Front-End Web Developer Intern',
+            company: 'Bright Ideas Design, Taiwan',
+            time: `Feb - Aug 2020`,
+            desc: [
+                `Worked with senior developers and followed the design pattern to build UIs`,
+                `Refactored the existing code to mobile first methodology`
+            ]
+        }
+    ]
+
     return (
-        <section id="experience" className="text-gray-400 bg-gray-900 body-font m-auto max-w-xl p-6">
-            <div className="container px-5 mx-auto text-center lg:px-40">
-                <div className="flex flex-col mb-8">
-                    <BriefcaseIcon className="mx-auto inline-block w-10 mb-4" />
-                    <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-                        Work Experience
-                    </h1>
+        <section id="experience">
+            <div className="grid grid-cols-2 ml-28 mr-28">
+                <div className="text-center">
+                    <BriefcaseIcon className="mx-auto inline-block w-10 mb-4" /><h1 className="text-4xl">Work Experience</h1>
                 </div>
-            </div>
-            <div className="text-white text-left flex flex-col">
-                <div className="mb-8 text-lg">
-                    <h1 className="text-2xl mb-2 text-center">
-                        Darktrace
-                    </h1>
-                    <h3 className="text-lg mb-4 text-gray-300 text-center">
-                        Software Engineer
-                    </h3>
-                    <div className="text-md text-left ">
-                        <li>
-                            Developed Web API and SQL query on NodeJS
-                        </li>
-                        <li>
-                            Developed reusable JS class components, implemented with JQuery and CSS
-                        </li>
-
-                        <li>
-                            Cooperated with technical operations executive to achieve web visual and
-                            backend business logic design goals
-                        </li>
-                        <li>
-                            Participated in Scrum meetings and code reviews
-                        </li>
-                    </div>
-                </div>
-            </div>
-            <div className="text-white text-left flex flex-col">
-                <div className="mb-8 text-lg">
-                    <h1 className="text-2xl mb-2 text-center">
-                        Bright Ideas Design CO., LTD.
-                    </h1>
-                    <h3 className="text-lg mb-4 text-gray-300 text-center">
-                        Front-End Web Developer Intern
-                    </h3>
-                    <div className="text-md text-left ">
-                        <li>
-                            Followed the design pattern to build UIs
-                        </li>
-                        <li>
-                            Developed new functionalities to enhance user experience
-                        </li>
-
-                        <li>
-                            Edited the existing code for mobile first methodology
-                        </li>
-                    </div>
+                <div className="mt-8 mb-8">
+                    {works.map(work => <WorkCard key={work.id} work={work} />)}
                 </div>
             </div>
         </section>
     )
-}
+};

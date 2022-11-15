@@ -27,12 +27,14 @@ export default function About() {
                         <a
                             href="https://www.linkedin.com/in/ricky-kuo/"
                             target="_blank"
+                            rel="noreferrer"
                             className="text-white px-6 hover:text-gray-300 text-3xl">
                             <ion-icon name="logo-linkedin"></ion-icon>
                         </a>
                         <a
                             href="https://github.com/RickyUomo"
                             target="_blank"
+                            rel="noreferrer"
                             className="text-white hover:text-gray-300 text-3xl"
                         >
 
