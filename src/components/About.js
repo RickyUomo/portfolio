@@ -1,7 +1,13 @@
 import React from 'react';
+import { useState } from 'react';
 import Ricky from '../img/ricky.jpg';
 
 export default function About() {
+    const [isHovering, setIsHovering] = useState(false);
+
+    const handleMouseOver = () => setIsHovering(true);
+    const handleMouseLeave = () => setIsHovering(false);
+
     return (
         <section id="about">
             <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
@@ -45,9 +51,16 @@ export default function About() {
                             target="_blank"
                             download="MengJuKuoCV.pdf"
                             className="text-white pl-6 hover:text-gray-300 text-3xl"
+                            onMouseOver={handleMouseOver}
+                            onMouseLeave={handleMouseLeave}
                         >
                             <ion-icon name="archive-outline"></ion-icon>
                         </a>
+                        {
+                            isHovering ?
+                                <span className="rounded-r-2xl rounded-bl-2xl text-sm bg-white bg-opacity-20 px-2 py-2 ml-1">CV</span> :
+                                ''
+                        }
                     </div>
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
