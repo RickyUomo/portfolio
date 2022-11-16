@@ -1,5 +1,5 @@
-import React from 'react'
-import Ricky from '../img/ricky.jpg'
+import React from 'react';
+import Ricky from '../img/ricky.jpg';
 
 export default function About() {
     return (
@@ -12,7 +12,7 @@ export default function About() {
                         I love to build apps and learn new technologies.
                     </h1>
                     <p className="mb-8 leading-relaxed">
-                        I am currently working as a Software Engineer in Darktrace.
+                        I am currently working as a Software Engineer at Darktrace.
                     </p>
                     <div className="flex justify-center">
                         <a
@@ -37,8 +37,16 @@ export default function About() {
                             rel="noreferrer"
                             className="text-white hover:text-gray-300 text-3xl"
                         >
-
                             <ion-icon className="" name="logo-github"></ion-icon>
+                        </a>
+
+                        <a
+                            href="assets/MengJuKuoCV.pdf"
+                            target="_blank"
+                            download="MengJuKuoCV.pdf"
+                            className="text-white pl-6 hover:text-gray-300 text-3xl"
+                        >
+                            <ion-icon name="archive-outline"></ion-icon>
                         </a>
                     </div>
                 </div>
