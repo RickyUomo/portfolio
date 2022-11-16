@@ -11,7 +11,7 @@ export default function Work() {
             time: `Feb - Present 2022`,
             desc: [
                 `Maintained internal CRM application by developing routes API, 
-                middleware and SQL query in NodeJS, migrating Database in PHP Laravel framework, implementing UI in jQuery/React`
+                middleware and SQL query in NodeJS, migrating Database in PHP Laravel framework, implementing UI in jQuery`
             ]
         },
         {
