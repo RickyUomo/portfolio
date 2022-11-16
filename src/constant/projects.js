@@ -1,6 +1,6 @@
-import p1 from './img/p_1.gif'
-import netflix from './img/netflix.png'
-import movie from './img/movie_search.png'
+import p1 from '../img/p_1.gif';
+import netflix from '../img/netflix.png';
+import movie from '../img/movie_search.png';
 
 export const projects = [
     {
@@ -23,4 +23,4 @@ export const projects = [
         image: movie,
         link: 'https://cord-movie-search.herokuapp.com/discover'
     }
-]
+];

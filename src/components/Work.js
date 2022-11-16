@@ -10,8 +10,11 @@ export default function Work() {
             company: 'Darktrace, UK',
             time: `Feb - Present 2022`,
             desc: [
-                `Maintained internal CRM application by developing routes API, 
-                middleware and SQL query in NodeJS, migrating Database in PHP Laravel framework, implementing UI in jQuery`
+                {
+                    id: 11,
+                    name: `Maintained internal CRM application by developing routes API, 
+                    middleware and SQL query in NodeJS, migrating Database in PHP Laravel framework, implementing UI in jQuery`
+                }
             ]
         },
         {
@@ -20,8 +23,14 @@ export default function Work() {
             company: 'Bright Ideas Design, Taiwan',
             time: `Feb - Aug 2020`,
             desc: [
-                `Worked with senior developers and followed the design pattern to build UIs`,
-                `Refactored the existing code to mobile first methodology`
+                {
+                    id: 11,
+                    name: `Worked with senior developers and followed the design pattern to build UIs`
+                },
+                {
+                    id: 12,
+                    name: `Refactored the existing code to mobile first methodology`
+                }
             ]
         }
     ]

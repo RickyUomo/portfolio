@@ -9,9 +9,18 @@ export default function Educatoin() {
             school: 'University of Nottingham, UK',
             major: 'MSc in Computer Science (Artificial Intelligent)',
             courses: [
-                'Database and Software Design Principles',
-                'Data Modeling and Analysis',
-                'Systems and Network'
+                {
+                    id: 11,
+                    name: 'Database and Software Design Principles'
+                },
+                {
+                    id: 12,
+                    name: 'Data Modeling and Analysis'
+                },
+                {
+                    id: 13,
+                    name: 'Systems and Network'
+                }
             ]
         },
         {
@@ -19,10 +28,22 @@ export default function Educatoin() {
             school: 'Tunghai University, Taiwan',
             major: 'BA in Sociology with minor in Computer Science',
             courses: [
-                'Data Structures',
-                'Algorithms',
-                'Machine Learning',
-                'Social Statistics'
+                {
+                    id: 11,
+                    name: 'Data Structures'
+                },
+                {
+                    id: 12,
+                    name: 'Algorithms'
+                },
+                {
+                    id: 13,
+                    name: 'Machine Learning'
+                },
+                {
+                    id: 14,
+                    name: 'Social Statistics'
+                }
             ]
         }
     ]

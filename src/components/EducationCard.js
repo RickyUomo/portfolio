@@ -8,12 +8,12 @@ export default function EducationCard({ education }) {
             <div>
                 <header className="mb-6">
                     <h1 className="text-2xl">{education.school}</h1>
-                    <p class="mb-3 text-base text-yellow-300">{education.major}</p>
+                    <p className="mb-3 text-base text-yellow-300">{education.major}</p>
                 </header>
 
                 <div>
                     <ul className="list-disc">
-                        {courses.map(course => <li>{course}</li>)}
+                        {courses.map(course => <li key={course.id}>{course.name}</li>)}
                     </ul>
                 </div>
             </div>

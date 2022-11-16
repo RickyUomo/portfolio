@@ -1,6 +1,6 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
-import { projects } from "../projects";
+import { projects } from "../constant/projects";
 
 export default function Projects() {
     return (
