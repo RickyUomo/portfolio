@@ -6,7 +6,7 @@ export default function Educatoin() {
     const education = [
         {
             id: 1,
-            school: 'University of Nottingham, UK (Grade: Merit)',
+            school: 'University of Nottingham, UK',
             major: 'MSc in Computer Science (Artificial Intelligent)',
             courses: [
                 'Database and Software Design Principles',
@@ -16,7 +16,7 @@ export default function Educatoin() {
         },
         {
             id: 2,
-            school: 'Tunghai University, Taiwan (Grade: 79.65%)',
+            school: 'Tunghai University, Taiwan',
             major: 'BA in Sociology with minor in Computer Science',
             courses: [
                 'Data Structures',
@@ -28,9 +28,9 @@ export default function Educatoin() {
     ]
 
     return (
-        <section id="education" className="bg-gray-900 body-font mb-10 m-auto max-w-xl p-6">
+        <section id="education">
             <div className="container px-5 mx-auto lg:px-40">
-                <div className="flex flex-col w-full mb-10">
+                <div className="text-center w-full mb-10">
                     <AcademicCapIcon className="mx-auto inline-block w-10 mb-4" />
                     <h1 className="sm:text-4xl text-3xl font-medium text-center title-font text-white">
                         Educatoin
@@ -38,8 +38,8 @@ export default function Educatoin() {
                 </div>
             </div>
 
-            <div className="mt-8 mb-8">
-                {education.map(education => <EducationCard key={education.id} education={education} />)}
+            <div className="flex justify-center flex-wrap ">
+                {education.map(education => <EducationCard key={education.id} education={education} className={"flex-1"} />)}
             </div>
         </section>
     );

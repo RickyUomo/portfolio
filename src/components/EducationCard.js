@@ -4,7 +4,7 @@ export default function EducationCard({ education }) {
     const courses = education.courses;
 
     return (
-        <div className="pr-14 pl-14 pt-8 pb-8 mt-8 mb-8 ml-14 bg-blue-900 bg-opacity-25 flex">
+        <div className="px-14 py-8 mx-4 my-4 md:mx-14 md:my-8 max-w-xl bg-blue-900 bg-opacity-25 flex-1">
             <div>
                 <header className="mb-6">
                     <h1 className="text-2xl">{education.school}</h1>

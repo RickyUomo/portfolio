@@ -10,17 +10,13 @@ export default function Work() {
             company: 'Darktrace, UK',
             time: `Feb - Present 2022`,
             desc: [
-                `Maintained internal Customer Relationship Management application by developing routes API, 
-                middleware and SQL query in NodeJS, migrating Database in PHP Laravel framework, implementing UI in jQuery/React`,
-                `Implemented sales rep’s dashboard using vanilla JavaScript and jQuery to visualize data stored in MySQL, 
-                designed SQL query decreasing loading latency by over 10 times`,
-                `Cooperated with technical operations executive to achieve front-end visual designs 
-                and backend business logic according to requirements`
+                `Maintained internal CRM application by developing routes API, 
+                middleware and SQL query in NodeJS, migrating Database in PHP Laravel framework, implementing UI in jQuery/React`
             ]
         },
         {
             id: 2,
-            title: 'Front-End Web Developer Intern',
+            title: 'Front-End Developer Intern',
             company: 'Bright Ideas Design, Taiwan',
             time: `Feb - Aug 2020`,
             desc: [
@@ -32,11 +28,11 @@ export default function Work() {
 
     return (
         <section id="experience">
-            <div className="bg-gray-900 body-font mb-10 m-auto max-w-xl p-6">
-                <div className="text-center">
+            <div className=" bg-gray-900 body-font mb-10 mx-auto">
+                <div className="text-center w-full mb-10">
                     <BriefcaseIcon className="mx-auto inline-block w-10 mb-4" /><h1 className="text-4xl">Work Experience</h1>
                 </div>
-                <div className="mt-8 mb-8">
+                <div className="flex justify-center flex-wrap">
                     {works.map(work => <WorkCard key={work.id} work={work} />)}
                 </div>
             </div>
