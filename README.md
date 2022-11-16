@@ -1,3 +1,3 @@
 # Ricky Kuo Portfolio
 
- [Link](https://ricky-profile.herokuapp.com/).
+ [Link](https://mengju-portfolio.netlify.app//).
