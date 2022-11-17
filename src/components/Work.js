@@ -8,7 +8,7 @@ export default function Work() {
             id: 1,
             title: 'Software Developer',
             company: 'Darktrace, UK',
-            time: `Feb - Present 2022`,
+            time: `Feb - Nov 2022`,
             desc: [
                 {
                     id: 11,
