@@ -15,7 +15,7 @@ export const projects = [
         description:
             "React, styled components and firebase to rebuild Netflix interface. However, still under construction",
         image: netflix,
-        link: "https://mengju-netflix-clone.netlify.app/",
+        link: "https://mengju-clone.netlify.app/",
     },
     {
         title: 'Movie Search',
