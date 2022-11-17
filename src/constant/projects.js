@@ -1,6 +1,7 @@
 import p1 from '../img/p_1.gif';
 import netflix from '../img/netflix.png';
 import movie from '../img/movie_search.png';
+import rib from '../img/rib.png';
 
 export const projects = [
     {
@@ -22,5 +23,12 @@ export const projects = [
             "Responsively movie searching application, implemented debounce to restrict the amount of API calls. <React, TMDB>",
         image: movie,
         link: 'https://cord-movie-search.herokuapp.com/discover'
+    },
+    {
+        title: 'Rib Responsive',
+        description:
+            "A demo of responsive web page. <HTML, CSS>",
+        image: rib,
+        link: 'https://responsive-rib.netlify.app/'
     }
 ];
