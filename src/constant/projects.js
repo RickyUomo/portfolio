@@ -22,7 +22,7 @@ export const projects = [
         description:
             "Responsively movie searching application, implemented debounce to restrict the amount of API calls. <React, TMDB>",
         image: movie,
-        link: 'https://cord-movie-search.herokuapp.com/discover'
+        link: 'https://mengju-movie-search.netlify.app/'
     },
     {
         title: 'Rib Responsive',
