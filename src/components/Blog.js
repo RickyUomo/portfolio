@@ -7,9 +7,13 @@ import blogService from "../services/blog";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
+  const [recentBlogs, setRecentBlogs] = useState([]);
 
   useEffect(() => {
-    blogService.getAll().then((blogs) => setBlogs(blogs));
+    blogService.getAll().then((blogs) => {
+      setBlogs(blogs.allPosts);
+      setRecentBlogs(blogs.recentPosts);
+    });
   }, []);
 
   return (
