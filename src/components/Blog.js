@@ -17,7 +17,7 @@ const Blog = () => {
   }, []);
 
   return (
-    <div className="container max-auto px-10 mb-8">
+    <div className="container max-auto px-10">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
           {blogs.map((post) => (
