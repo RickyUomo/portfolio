@@ -1,3 +1,3 @@
-# Ricky Kuo Portfolio
+# Ricky Kuo Portfolio!
 
- [Link](https://mengju-portfolio.netlify.app//).
+[Link](https://mengju-portfolio.netlify.app//).
