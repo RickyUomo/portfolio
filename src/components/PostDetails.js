@@ -8,8 +8,8 @@ const PostDetails = ({ blogs }) => {
 
   useEffect(() => {
     const blog = blogs.find((blog) => blog.node.slug === slug);
-    setPost(blog.node);
-  }, []);
+    setPost(blog?.node);
+  }, [blogs, slug]);
 
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
