@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 export default function Navbar() {
+  const scrollDirection = useScrollDirection();
+  console.log(scrollDirection);
+
   return (
-    <header className="bg-gray-800 md:sticky top-0 z-10">
+    <header
+      className={`bg-gray-800 md:sticky ${
+        scrollDirection === "down" ? "-top-24" : "top-0"
+      } top-0 z-10 transition-all duration-500`}
+    >
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <div className="title-font font-medium text-white mb-4 md:mb-0">
           <HashLink smooth to="#about" className="ml-3 text-xl">
@@ -39,4 +46,30 @@ export default function Navbar() {
       </div>
     </header>
   );
+}
+
+function useScrollDirection() {
+  const [scrollDirection, setScrollDirection] = useState(null);
+
+  useEffect(() => {
+    let lastScrollY = window.pageYOffset;
+
+    const updateScrollDirection = () => {
+      const scrollY = window.pageYOffset;
+      const direction = scrollY > lastScrollY ? "down" : "up";
+      if (
+        direction !== scrollDirection &&
+        (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)
+      ) {
+        setScrollDirection(direction);
+      }
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+    };
+    window.addEventListener("scroll", updateScrollDirection); // add event listener
+    return () => {
+      window.removeEventListener("scroll", updateScrollDirection); // clean up
+    };
+  }, [scrollDirection]);
+
+  return scrollDirection;
 }
