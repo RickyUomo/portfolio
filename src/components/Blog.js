@@ -2,22 +2,8 @@ import React from "react";
 import PostCard from "./PostCard";
 import Categories from "./Categories";
 import PostWidget from "./PostWidget";
-import { useEffect, useState } from "react";
-import blogService from "../services/blog";
 
-const Blog = () => {
-  const [blogs, setBlogs] = useState([]);
-  const [recentBlogs, setRecentBlogs] = useState([]);
-  const [categories, setCategories] = useState([]);
-
-  useEffect(() => {
-    blogService.getAll().then((blogs) => {
-      setBlogs(blogs.allPosts);
-      setRecentBlogs(blogs.recentPosts);
-      setCategories(blogs.categories);
-    });
-  }, []);
-
+const Blog = ({ blogs, recentBlogs, categories }) => {
   return (
     <div className="container max-auto px-10">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
