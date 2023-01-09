@@ -14,7 +14,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <div className="title-font font-medium text-white mb-4 md:mb-0">
-          <HashLink smooth to="#about" className="ml-3 text-xl">
+          <HashLink smooth to="/#about" className="ml-3 text-xl">
             Ricky Kuo
           </HashLink>
         </div>
