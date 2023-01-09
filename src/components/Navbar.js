@@ -4,7 +4,6 @@ import { HashLink } from "react-router-hash-link";
 
 export default function Navbar() {
   const scrollDirection = useScrollDirection();
-  console.log(scrollDirection);
 
   return (
     <header
