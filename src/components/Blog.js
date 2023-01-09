@@ -8,11 +8,13 @@ import blogService from "../services/blog";
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
   const [recentBlogs, setRecentBlogs] = useState([]);
+  const [categories, setCategories] = useState([]);
 
   useEffect(() => {
     blogService.getAll().then((blogs) => {
       setBlogs(blogs.allPosts);
       setRecentBlogs(blogs.recentPosts);
+      setCategories(blogs.categories);
     });
   }, []);
 
@@ -27,7 +29,7 @@ const Blog = () => {
         <div className="lg:col-span-4 col-span-1">
           <div className="lg:sticky relative top-8">
             <PostWidget recentBlogs={recentBlogs} />
-            <Categories />
+            <Categories categories={categories} />
           </div>
         </div>
       </div>
