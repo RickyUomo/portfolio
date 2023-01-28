@@ -20,6 +20,8 @@ function App() {
     });
   }, []);
 
+  console.log(["blogs"], blogs);
+
   return (
     <Router>
       <main className="text-gray-300 bg-gray-900 body-font">
