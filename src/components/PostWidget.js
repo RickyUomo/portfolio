@@ -8,7 +8,7 @@ const PostWidget = ({ categories, slug, recentBlogs }) => {
       <h3 className="text-xl mb-8 font-semibold border-b pb-4">
         {slug ? "Related Posts" : "Recent Posts"}
       </h3>
-      {recentBlogs.map((post, index) => (
+      {recentBlogs?.map((post, index) => (
         <div key={index} className="flex items-center w-full mb-4">
           <div className="flex-grow ml-4">
             <p className="text-gray-500 font-xs">

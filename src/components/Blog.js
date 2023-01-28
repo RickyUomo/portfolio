@@ -8,7 +8,7 @@ const Blog = ({ blogs, recentBlogs, categories }) => {
     <div className="container max-auto px-10">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
-          {blogs.map((post) => (
+          {blogs?.map((post) => (
             <PostCard key={post.node.title} post={post.node} />
           ))}
         </div>

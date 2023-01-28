@@ -1,5 +1,6 @@
 import axios from "axios";
-const baseUrl = "http://localhost:3001/blog";
+const baseUrl =
+  "http://ec2-35-78-201-173.ap-northeast-1.compute.amazonaws.com:3030/blog";
 
 const getAll = async () => {
   try {
