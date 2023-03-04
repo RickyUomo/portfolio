@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`bg-gray-800 md:sticky ${
+      className={`bg-gray-800 md:sticky flex ${
         scrollDirection === "down" ? "-top-24" : "top-0"
       } top-0 z-10 transition-all duration-500`}
     >
@@ -42,6 +42,9 @@ export default function Navbar() {
             <Link to="/blog">Blog</Link>
           </li>
         </ul>
+      </div>
+      <div className="flex items-center hover:text-white reletive cursor-pointer text-center w-40">
+        <h3>Log In</h3>
       </div>
     </header>
   );
