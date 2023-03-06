@@ -1,33 +1,31 @@
-import Home from "./components/Home";
-import Blog from "./components/Blog";
+// import Home from "./components/Home";
+// import Blog from "./components/Blog";
 import Navbar from "./components/Navbar";
-import PostDetails from "./components/PostDetails";
+// import PostDetails from "./components/PostDetails";
+import { AllRoutes } from "./AllRoutes";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
-import blogService from "./services/blog";
+import { BrowserRouter as Router } from "react-router-dom";
+// import blogService from "./services/blog";
 
 function App() {
-  const [blogs, setBlogs] = useState([]);
-  const [recentBlogs, setRecentBlogs] = useState([]);
-  const [categories, setCategories] = useState([]);
+  // const [blogs, setBlogs] = useState([]);
+  // const [recentBlogs, setRecentBlogs] = useState([]);
+  // const [categories, setCategories] = useState([]);
 
-  useEffect(() => {
-    blogService.getAll().then((blogs) => {
-      setBlogs(blogs.allPosts);
-      setRecentBlogs(blogs.recentPosts);
-      setCategories(blogs.categories);
-    });
-  }, []);
-
-  console.log(["blogs"], blogs);
+  // useEffect(() => {
+  //   blogService.getAll().then((blogs) => {
+  //     setBlogs(blogs.allPosts);
+  //     setRecentBlogs(blogs.recentPosts);
+  //     setCategories(blogs.categories);
+  //   });
+  // }, []);
 
   return (
     <Router>
       <main className="text-gray-300 bg-gray-900 body-font">
         <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
+        <AllRoutes />
+        {/* <Routes>
           <Route
             exact
             path="/blog"
@@ -44,7 +42,7 @@ function App() {
             path="/blog/:slug"
             element={<PostDetails blogs={blogs} />}
           />
-        </Routes>
+        </Routes> */}
       </main>
     </Router>
   );
