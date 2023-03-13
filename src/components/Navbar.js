@@ -38,9 +38,9 @@ export default function Navbar() {
               Experiences
             </HashLink>
           </li>
-          <li className="mr-5 hover:text-white">
+          {/* <li className="mr-5 hover:text-white">
             <Link to="/blog">Blog</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="flex items-center hover:text-white reletive cursor-pointer text-center w-40">
